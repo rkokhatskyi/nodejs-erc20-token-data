@@ -1,6 +1,6 @@
 # Ethereum Token Data API
 
-This project provides a simple API to fetch data from ERC-20 tokens on the Ethereum blockchain using Node.js, Express, and Web3.js. It offers endpoints to retrieve a token's balance, name, symbol, decimals, and total supply.
+This project provides a simple API to fetch data from ERC-20 tokens on the Ethereum blockchain using Node.js, Express, and Web3.js. It offers endpoints to retrieve a token's balance, name, symbol and decimals.
 
 ## Features
 
