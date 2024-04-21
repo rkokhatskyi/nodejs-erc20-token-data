@@ -4,9 +4,9 @@ This project provides a simple API to fetch data from ERC-20 tokens on the Ether
 
 ## Features
 
-- Fetch balance for a given Ethereum address.
+- Fetch balance for a given Ethereum address
 - Get token name, symbol, and decimals
-- Error handling and address validation.
+- Error handling and address validation
 
 ## Prerequisites
 
@@ -85,7 +85,7 @@ This will launch the server http://localhost:3000
 
 > Fetches the balance of the specified Ethereum address for the token in wei.
 
-Example:
+Example (positive):
 
 ```bash
 curl -X GET http://localhost:3000/api/token/balance/0xdac17f958d2ee523a2206206994597c13d831ec7
@@ -98,6 +98,21 @@ curl -X GET http://localhost:3000/api/token/balance/0xdac17f958d2ee523a220620699
   "balance":"826245378952"
 }
 ```
+
+##### Example with validation error 
+
+```bash
+curl -X GET http://localhost:3000/api/token/balance/invalid
+```
+
+##### Response
+
+```bash
+{
+    "error": "Invalid Ethereum address"
+}
+```
+
 
 **Note:** balance returned in Wei, if you need the balance normalized to Ether you can use some external services like https://www.eth-to-wei.com/ 
 
