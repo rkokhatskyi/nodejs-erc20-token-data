@@ -24,7 +24,7 @@ To get started with this project, clone the repository to your local machine and
 
 Clone repository
 ```bash
-https://github.com/rkokhatskyi/nodejs-erc20-token-data.git
+git clone https://github.com/rkokhatskyi/nodejs-erc20-token-data.git
 ```
 <br>
 
